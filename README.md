@@ -16,5 +16,5 @@ Start by inputting the `Arch.jpg` file into your forensic tool ([CyberChef](http
 
 ## Hints
 
-* Use an operation to **EXTRACT** the metadata from the file (specifically **EXIF**).
+* Use an operation to **EXTRACT** the metadata from the file.
 * The suspicious information is hidden in a field typically used for camera description. In image metadata, this often corresponds to the **Make** or **Model** tag.
