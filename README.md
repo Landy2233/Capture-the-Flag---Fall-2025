@@ -1,4 +1,4 @@
-# 🔍 Forensics/Steganography: Metadata Hidden in Plain Sight
+# 🔍 Forensics/Steganography: Metadata Hidden
 
 ---
 
