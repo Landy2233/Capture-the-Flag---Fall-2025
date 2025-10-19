@@ -16,5 +16,5 @@ Start by inputting the `Arch.jpg` file into your forensic tool ([CyberChef](http
 
 ## Hints
 
-* You will need to determine the **specific EXTRACT operation ** used in CyberChef to handle camera and image-specific metadata. 
+* You will need to determine the **specific EXTRACT operation** used in CyberChef to handle camera and image-specific metadata. 
 * The suspicious information is hidden in a field typically used for camera description. In image metadata, this often corresponds to the **Make** or **Model** tag.
