@@ -12,7 +12,7 @@ You will need the **`Arch.jpg`** file for this challenge.
 
 Your objective is to uncover the hidden information (the **flag**) contained within the metadata of the `Arch.jpg` image file.
 
-Start by inputting the `Arch.jpg` file into your forensic tool (e.g., [CyberChef](https://gchq.github.io/CyberChef/)).
+Start by inputting the `Arch.jpg` file into your forensic tool ([CyberChef](https://gchq.github.io/CyberChef/)).
 
 ## Hints
 
