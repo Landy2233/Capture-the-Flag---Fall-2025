@@ -8,7 +8,7 @@ Decrypt the following ciphertext to find the flag.
 
 **Keyword:** GLAB
 
-O DTBTO BZ CLLMY HHFXP PFUALF XZAN, CTTI HFTUUYS UU ARFYD AOJ DNBIVS UU EALK SONK.
+O DTBTO BZ CLLMY HHFXP PFUALF XZAN, CTTI HFTUUYS UU ARFYD AOJ DNBIVS UU EALK SONK
 
 
 # 🔍 Challenge 2: Metadata Hidden
