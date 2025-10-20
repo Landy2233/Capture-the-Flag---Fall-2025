@@ -1,4 +1,4 @@
-# 🔍 Forensics/Steganography: Metadata Hidden
+# 🔍 Challenge 2: Metadata Hidden
 
 ---
 
