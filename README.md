@@ -21,6 +21,7 @@ Start by inputting the `arch.jpg` file into your forensic tool ([CyberChef](http
 * The final answer (the flag) will be in this format: `flag{something_hidden_here}`. 
 
 
+
 # 🖼️ Challenge 3 — Beneath the Images
 
 ---
