@@ -4,7 +4,7 @@
 
 ## Problem Description
 
-Decrypt the following ciphertext.
+Decrypt the following ciphertext to find the flag.
 
 **Keyword:** GLAB
 
