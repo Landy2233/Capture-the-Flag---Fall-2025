@@ -20,6 +20,7 @@ Start by inputting the `arch.jpg` file into your forensic tool ([CyberChef](http
 * The suspicious information is hidden in a field typically used for camera description. In image metadata, this often corresponds to the **Make** or **Model** tag.
 * The final answer (the flag) will be in this format: `flag{something_hidden_here}`. 
 
+
 # 🖼️ Challenge 3 — Beneath the Images
 
 ---
