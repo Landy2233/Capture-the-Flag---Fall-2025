@@ -1,4 +1,4 @@
-# Challenge 1: Decryption
+# 🔑 Challenge 1: Decryption
 
 ---
 
