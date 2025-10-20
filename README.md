@@ -2,7 +2,11 @@
 
 ---
 
-Keyword: GLAB
+## Problem Description
+
+Decrypt the following ciphertext.
+
+**Keyword:** GLAB
 
 O DTBTO BZ CLLMY HHFXP PFUALF XZAN, CTTI HFTUUYS UU ARFYD AOJ DNBIVS UU EALK SONK.
 
