@@ -7,6 +7,7 @@
 Decrypt the following ciphertext to find the flag.
 
 **Keyword:** GLAB
+
 **Key Letter:** E
 
 C OPWIZ XU PBG SWFFO SBGNG KGJKFG NJWH, SCPB XQPPJIO PJ KNGOO WIZ OIWYEO PJ PWEG BJHG
