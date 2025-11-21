@@ -63,7 +63,9 @@ The flag has been concealed by setting a height value in the image header that i
 
 * You will need to use converters to switch between decimal and hexadecimal for your calculations:
     * **Hex to Decimal Converter:** [https://www.binaryhexconverter.com/hex-to-decimal-converter](https://www.binaryhexconverter.com/hex-to-decimal-converter)
- 
+    * **Decimal to Hex Converter:** [https://www.binaryhexconverter.com/decimal-to-hex-converter](https://www.binaryhexconverter.com/decimal-to-hex-converter)
+* The flag is in the standard CTF format: `flag{something_hidden_here}`.
+
 #  Challenge 4 — Trivia Challenge
 
 ---
@@ -71,5 +73,3 @@ The flag has been concealed by setting a height value in the image header that i
 ## Problem Description
 
 This kind of malicious software will encrypt the files on your hard drive and only provide a decryption key when you pay hackers a hefty fee, usually in cryptocurrency. 
-    * **Decimal to Hex Converter:** [https://www.binaryhexconverter.com/decimal-to-hex-converter](https://www.binaryhexconverter.com/decimal-to-hex-converter)
-* The flag is in the standard CTF format: `flag{something_hidden_here}`.
