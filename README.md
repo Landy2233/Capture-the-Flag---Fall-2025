@@ -52,7 +52,7 @@ The flag has been concealed by setting a height value in the image header that i
 1.  Open the **`cat.jpg`** file in [CyberChef](https://gchq.github.io/CyberChef/).
 2.  Locate the **Start of Frame (SOF0)** marker, which defines the image's dimensions.
 3.  Identify the 2-byte hexadecimal value that sets the current **Image Height**.
-4.  Calculate the new height required to display the full canvas. The full content requires you to **increase the current height metadata value by 2,000 pixels**.
+4.  Calculate the new height required to display the full canvas. The full content requires you to **increase the current height metadata value by 96 pixels**.
 5.  Convert this new total height back into a 2-byte hexadecimal value.
 6.  Modify the image file's header with the new hexadecimal height value and re-render the image to capture the flag.
 
