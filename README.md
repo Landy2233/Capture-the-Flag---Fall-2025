@@ -72,6 +72,7 @@ The flag has been concealed by setting a height value in the image header that i
 
 ---
 
-1. This kind of malicious software will encrypt the files on your hard drive and only provide a decryption key when you pay hackers a hefty fee, usually in cryptocurrency.
-   
-2. This kind of malware places itself deep inside a computer’s code, allowing for the hacker to have remote control. 
+1. What type of malware is capable of replicating itself and spreading across systems without needing to attach to another program?
+2. What do we call a weakness or flaw in software, hardware, or a system that attackers can exploit?
+
+Put both answers together: flag{answer1_answer2} 
