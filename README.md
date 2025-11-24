@@ -72,6 +72,6 @@ The flag has been concealed by setting a height value in the image header that i
 
 ---
 
-## Problem Description
-
-This kind of malicious software will encrypt the files on your hard drive and only provide a decryption key when you pay hackers a hefty fee, usually in cryptocurrency. 
+1. This kind of malicious software will encrypt the files on your hard drive and only provide a decryption key when you pay hackers a hefty fee, usually in cryptocurrency.
+   
+2. This kind of malware places itself deep inside a computer’s code, allowing for the hacker to have remote control. 
