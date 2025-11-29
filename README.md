@@ -73,12 +73,9 @@ The flag has been concealed by setting a height value in the image header that i
 Your goal is to crack the password-protected ZIP file, extract the hidden trivia questions, and use the answers to form the flag.
 
 ---
-### 📁 Step 1 — Download the challenge files and navigate to the folder
+### 📁 Step 1 — Install John the Ripper, download the challenge files, and navigate to the folder
 
-Downloaded the following files: 
-
-`trivia.zip`
-`trivia_hash.txt`
+You will need **John the Ripper** installed to complete this challenge.
 
 **macOS:**
 
@@ -89,6 +86,36 @@ Open **Terminal**:
 
 Open **Command Prompt** or **PowerShell**:  
 - Press **Windows Key**, type **cmd** or **powershell**, press **Enter**
+
+**Install John the Ripper**
+
+**macOS Installation (Homebrew)**
+If you do NOT have Homebrew installed:
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Then install john-jumbo:
+
+    brew install john-jumbo
+
+**Windows Installation**
+
+Download the Windows build of John the Ripper (community "jumbo" version):
+
+Direct download:
+[https://www.openwall.com/john/]
+
+Choose:
+
+    Windows binaries: John the Ripper 1.9.0-jumbo-1 (community)
+
+Extract the ZIP and open PowerShell inside the run folder. 
+
+
+**Download the following files:**
+
+`trivia.zip`
+`trivia_hash.txt`
   
 Navigate to the directory where YOU downloaded the files.
 
