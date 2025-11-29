@@ -80,21 +80,43 @@ Downloaded the following files:
 `trivia.zip`
 `trivia_hash.txt`
 
+### ✔ macOS Users  
+Open **Terminal**:  
+- Press **Command + Space**, type **Terminal**, press **Enter**  
+
+### ✔ Windows Users  
+Open **Command Prompt** or **PowerShell**:  
+- Press **Windows Key**, type **cmd** or **powershell**, press **Enter**
+  
 Navigate to the directory where YOU downloaded the files.
 
-Example (Downloads):
+macOS Example:
 
     cd ~/Downloads
-
+    
+Windows Example:
+cd $HOME\Downloads
 
 Or if you saved them somewhere else:
 
+macOS:
+
     cd ~/path/to/your/folder
 
+Windows:
+
+    cd C:\path\to\your\folder
 
 Verify the files are present:
 
+macOS:
+
     ls
+
+
+Windows:
+
+    dir
 
 
 You should see:
@@ -106,12 +128,23 @@ trivia_hash.txt
 
 Use curl to download rockyou.txt.gz:
 
+macOS:
+
     curl -L -o rockyou.txt.gz https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+
+Windows (PowerShell):
+
+    Invoke-WebRequest -Uri "https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz" -OutFile "rockyou.txt.gz"
 
 ### 🗜️ Step 3 — Extract the wordlist
 
+macOS:
+
     gunzip rockyou.txt.gz
 
+Windows (PowerShell):
+
+    Expand-Archive -Path rockyou.txt.gz -DestinationPath .
 
 This creates:
 
