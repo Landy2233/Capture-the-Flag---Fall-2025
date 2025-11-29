@@ -73,7 +73,12 @@ The flag has been concealed by setting a height value in the image header that i
 Your goal is to crack the password-protected ZIP file, extract the hidden trivia questions, and use the answers to form the flag.
 
 ---
-### 📁 Step 1 — Go to the folder where you saved the challenge files
+### 📁 Step 1 — Download the challenge files and navigate to the folder
+
+Make sure you have downloaded: 
+
+trivia.zip
+trivia_hash.txt
 
 Navigate to the directory where YOU downloaded the files.
 
