@@ -75,10 +75,10 @@ Your goal is to crack the password-protected ZIP file, extract the hidden trivia
 ---
 ### 📁 Step 1 — Download the challenge files and navigate to the folder
 
-Make sure you have downloaded: 
+Downloaded the following files: 
 
-trivia.zip
-trivia_hash.txt
+`trivia.zip`
+`trivia_hash.txt`
 
 Navigate to the directory where YOU downloaded the files.
 
