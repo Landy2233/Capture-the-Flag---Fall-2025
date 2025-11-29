@@ -103,7 +103,7 @@ Use curl to download rockyou.txt.gz:
 
     curl -L -o rockyou.txt.gz https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
 
-#### 🗜️ Step 3 — Extract the wordlist
+### 🗜️ Step 3 — Extract the wordlist
 
     gunzip rockyou.txt.gz
 
@@ -112,7 +112,7 @@ This creates:
 
 rockyou.txt
 
-🔨 **Step 4 — Crack the ZIP password using John the Ripper**
+### 🔨 Step 4 — Crack the ZIP password using John the Ripper
 
 Run:
 
