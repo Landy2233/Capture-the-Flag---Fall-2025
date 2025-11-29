@@ -80,11 +80,13 @@ Downloaded the following files:
 `trivia.zip`
 `trivia_hash.txt`
 
-### ✔ macOS Users  
+macOS:
+
 Open **Terminal**:  
 - Press **Command + Space**, type **Terminal**, press **Enter**  
 
-### ✔ Windows Users  
+Windows:
+
 Open **Command Prompt** or **PowerShell**:  
 - Press **Windows Key**, type **cmd** or **powershell**, press **Enter**
   
