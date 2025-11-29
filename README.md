@@ -188,9 +188,9 @@ Example (make sure to unzip first):
   cd john-1.9.0-jumbo-1-win64/john-1.9.0-jumbo-1-win64  
 
 Run:
-  1) cd run
+  cd run
   This command will only work if you have your John the Ripper folder along with your rock and trivia_hash file in your downloads folder.
-  2) .\john.exe --wordlist="..\..\..\rockyou.txt" "..\..\..\trivia_hash.txt"
+    .\john.exe --wordlist="..\..\..\rockyou.txt" "..\..\..\trivia_hash.txt"
 
 
   
