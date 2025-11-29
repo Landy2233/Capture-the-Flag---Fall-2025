@@ -184,10 +184,7 @@ trivia.txt
 
 Answer the two questions located in the file extracted (trivia.txt):
 
-
-### 🏁 Step 8 — Submit the final flag
-
-Format:
+Flag Format:
 
 flag{answer1_answer2}
 
