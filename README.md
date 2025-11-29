@@ -87,7 +87,7 @@ Open **Terminal**:
 Open **Command Prompt** or **PowerShell**:  
 - Press **Windows Key**, type **cmd** or **powershell**, press **Enter**
 
-**Install John the Ripper**
+## Install John the Ripper
 
 **macOS Installation (Homebrew)**
 If you do NOT have Homebrew installed:
