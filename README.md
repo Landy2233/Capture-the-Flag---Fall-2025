@@ -97,7 +97,8 @@ macOS Example:
     cd ~/Downloads
     
 Windows Example:
-cd $HOME\Downloads
+
+    cd $HOME\Downloads
 
 Or if you saved them somewhere else:
 
