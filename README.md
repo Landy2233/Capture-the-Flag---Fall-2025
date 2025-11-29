@@ -95,7 +95,7 @@ Verify the files are present:
 You should see:
 
 trivia.zip
-trivia_hash.txt
+trivia_hash.txt<br>
 
 📚 **Step 2 — Download the rockyou wordlist**
 
