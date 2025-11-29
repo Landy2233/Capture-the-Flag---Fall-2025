@@ -98,7 +98,7 @@ Then install john-jumbo:
 
     brew install john-jumbo
 
-**Windows Installation**
+**Windows Installation:**
 
 Download the Windows build of John the Ripper (community "jumbo" version):
 
@@ -112,7 +112,7 @@ Choose:
 Extract the ZIP and open PowerShell inside the run folder. 
 
 
-**Download the following files:**
+## Download the following files:
 
 `trivia.zip`
 `trivia_hash.txt`
