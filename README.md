@@ -79,17 +79,17 @@ Navigate to the directory where YOU downloaded the files.
 
 Example (Downloads):
 
-cd ~/Downloads
+    cd ~/Downloads
 
 
 Or if you saved them somewhere else:
 
-cd ~/path/to/your/folder
+    cd ~/path/to/your/folder
 
 
 Verify the files are present:
 
-ls
+    ls
 
 
 You should see:
@@ -101,11 +101,11 @@ trivia_hash.txt
 
 Use curl to download rockyou.txt.gz:
 
-curl -L -o rockyou.txt.gz https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+    curl -L -o rockyou.txt.gz https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
 
 🗜️ Step 3 — Extract the wordlist
 
-gunzip rockyou.txt.gz
+    gunzip rockyou.txt.gz
 
 
 This creates:
@@ -116,7 +116,7 @@ rockyou.txt
 
 Run:
 
-john --wordlist=rockyou.txt trivia_hash.txt
+    john --wordlist=rockyou.txt trivia_hash.txt
 
 
 If successful, John will eventually output something like:
@@ -129,7 +129,7 @@ password123       (trivia.zip/trivia.txt)
 
 (Optional, but helpful):
 
-john --show trivia_hash.txt
+    john --show trivia_hash.txt
 
 📂 Step 6 — Unzip the file
 
