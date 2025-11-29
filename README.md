@@ -184,7 +184,7 @@ trivia.txt
 
 Answer the two questions located in the file extracted (trivia.txt):
 
-Flag Format:
+**Flag Format:**
 
 flag{answer1_answer2}
 
