@@ -164,7 +164,7 @@ Use curl to download rockyou.txt.gz:
 
 **Windows (PowerShell):**
 
-    Invoke-WebRequest -Uri "https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz" -OutFile "rockyou.txt.gz"
+    curl "https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt" -o rockyou.txt
 
 ### 🗜️ Step 3 — Extract the wordlist
 
@@ -174,7 +174,7 @@ Use curl to download rockyou.txt.gz:
 
 **Windows (PowerShell):**
 
-    Expand-Archive -Path rockyou.txt.gz -DestinationPath .
+    No need.
 
 This creates:
 
@@ -182,6 +182,23 @@ rockyou.txt
 
 ### 🔨 Step 4 — Crack the ZIP password using John the Ripper
 
+## Windows - To use John the Ripper, you must switch to the file path
+
+Example (make sure to unzip first):
+  cd john-1.9.0-jumbo-1-win64/john-1.9.0-jumbo-1-win64  
+
+Run:
+  1) cd run
+  This command will only work if you have your John the Ripper folder along with your rock and trivia_hash file in your downloads folder.
+  2) .\john.exe --wordlist="..\..\..\rockyou.txt" "..\..\..\trivia_hash.txt"
+
+
+  
+  
+  
+
+
+## macOS
 Run:
 
     john --wordlist=rockyou.txt trivia_hash.txt
@@ -193,7 +210,7 @@ password123       (trivia.zip/trivia.txt)
 
 
 
-### 🔎 Step 5 — Display the cracked password
+### 🔎 Step 5 — Display the cracked password (for macOS only)
 
 (Optional, but helpful):
 
