@@ -180,7 +180,7 @@ This extracts:
 
 trivia.txt
 
-### 📖 Step 7 — Read the trivia questions
+### 📖 Step 7 — Answer the trivia questions
 
 Answer the two questions located in the file extracted (trivia.txt):
 
