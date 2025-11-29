@@ -68,11 +68,85 @@ The flag has been concealed by setting a height value in the image header that i
     * **Decimal to Hex Converter:** [https://www.binaryhexconverter.com/decimal-to-hex-converter](https://www.binaryhexconverter.com/decimal-to-hex-converter)
 * The flag is in the standard CTF format: `flag{something_hidden_here}`.
 
-#  Challenge 4 — Trivia Challenge
+#  🔐 Challenge 4 — Password Cracking (John the Ripper + ZIP)
+
+Your goal is to crack the password-protected ZIP file, extract the hidden trivia questions, and use the answers to form the flag.
 
 ---
+📁 Step 1 — Go to the folder where you saved the challenge files
 
-1. What type of malware is capable of replicating itself and spreading across systems without needing to attach to another program?
-2. What do we call a weakness or flaw in software, hardware, or a system that attackers can exploit?
+Navigate to the directory where YOU downloaded the files.
 
-Put both answers together: flag{answer1_answer2} 
+Example (Downloads):
+
+cd ~/Downloads
+
+
+Or if you saved them somewhere else:
+
+cd ~/path/to/your/folder
+
+
+Verify the files are present:
+
+ls
+
+
+You should see:
+
+trivia.zip
+trivia_hash.txt
+
+📚 Step 2 — Download the rockyou wordlist
+
+Use curl to download rockyou.txt.gz:
+
+curl -L -o rockyou.txt.gz https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+
+🗜️ Step 3 — Extract the wordlist
+
+gunzip rockyou.txt.gz
+
+
+This creates:
+
+rockyou.txt
+
+🔨 Step 4 — Crack the ZIP password using John the Ripper
+
+Run:
+
+john --wordlist=rockyou.txt trivia_hash.txt
+
+
+If successful, John will eventually output something like:
+
+password123       (trivia.zip/trivia.txt)
+
+—
+
+🔎 Step 5 — Display the cracked password
+
+(Optional, but helpful):
+
+john --show trivia_hash.txt
+
+📂 Step 6 — Unzip the file
+
+unzip trivia.zip and enter the cracked password
+
+This extracts:
+
+trivia.txt
+
+📖 Step 7 — Read the trivia questions
+
+Answer the two questions located in the file extracted (trivia.txt):
+
+
+🏁 Step 8 — Submit the final flag
+
+Format:
+
+flag{answer1_answer2}
+
