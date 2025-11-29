@@ -96,8 +96,8 @@ You should see:
 
 trivia.zip
 trivia_hash.txt
-     
-    
+&nbsp;     
+&nbsp;    
 📚 **Step 2 — Download the rockyou wordlist**
 
 Use curl to download rockyou.txt.gz:
