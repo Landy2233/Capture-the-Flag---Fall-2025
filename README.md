@@ -97,7 +97,7 @@ Only one POST request from 10.0.0.42 contains the real credentials.
 
 Filter all packets from CEO system
 
-ip.src == 0.0.0.0
+    ip.src == 0.0.0.0
 
 Show only HTTP packets
 
@@ -122,7 +122,7 @@ Show only POST logins to the 2007 login page
 
     http.request.method == "POST" && http.request.uri contains "log-in"
 
-Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path
+### Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path ###
 
 
 
