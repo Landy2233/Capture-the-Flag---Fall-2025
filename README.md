@@ -139,7 +139,7 @@ Given site: https://ctf-mwotmt76e-danny-galvis-projects.vercel.app/
 In SQL, anything after -- is treated as a comment.
 The database ignores everything after the double dash.
 
-### Break out of the string using a single quote ' ###
+Break out of the string using a single quote ' 
 
 Example:
 
