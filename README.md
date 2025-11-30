@@ -140,19 +140,23 @@ In SQL, anything after -- is treated as a comment.
 The database ignores everything after the double dash.
 
 Example:
-SELECT * FROM users -- this part is ignored
-------------------------------------------------------------
+
+    SELECT * FROM users -- this part is ignored
+
 
 HINT 1:
+
+
 Focus on the username field. If you inject SQL into the username,
 you can bypass the password check completely.
 
 Remember:
 "admin" is commonly an existing username.
 
-------------------------------------------------------------
 
 HINT 2:
+
+
 To perform SQL injection, the attacker must:
 1. Break out of the string using a single quote '
 2. Add their own logic: OR '1'='1'
@@ -160,19 +164,7 @@ To perform SQL injection, the attacker must:
 
 This deletes the password verification.
 
-------------------------------------------------------------
 
-HINT 3:
-If the attacker enters this as the username:
-' OR '1'='1' --
-
-The final SQL query becomes:
-
-SELECT * FROM users
-WHERE username = '' OR '1'='1' --'
-  AND password = 'whatever';
-
-Everything after -- is ignored, so the password check never runs.
 
 
 
