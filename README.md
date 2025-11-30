@@ -76,19 +76,21 @@ The flag has been concealed by setting a height value in the image header that i
 
 Before you begin this challenge, please download wireshark and the file in the repo called "capybara_bank_logs.pcap". Please open this file in Wireshark.
 
-## Capybara Savings Bank uses an old internal system called "Capybara Records 2007." 
+### Problem Description
+Capybara Savings Bank uses an old internal system called "Capybara Records 2007. 
 
 This system is outdated and transmits all login credentials in plain HTTP (no encryption).
 We captured network traffic while the CEO accessed this insecure system.
 Your objective is to analyze the .pcap file and extract the CEO’s login credentials and the site path that is revealed alongside them. Go onto the website and sign on with the sniffed credentials to find capture the flag!!!
 
-### CEO Source IP Address:
+## Hints!
+CEO Source IP Address:
 10.0.0.42
 
-### Target System Directory:
+Target System Directory:
     /2007-CapyBara-Records/
 
-### The login request is mixed into thousands of packets.
+The login request is mixed into thousands of packets.
 Only one POST request from 10.0.0.42 contains the real credentials.
 
 
