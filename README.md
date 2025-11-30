@@ -85,7 +85,7 @@ Your objective is to analyze the .pcap file and extract the CEO’s login creden
 
 ## Hints!
 CEO Source IP Address:
-10.0.0.42
+    10.0.0.42
 
 Target System Directory:
     /2007-CapyBara-Records/
@@ -100,19 +100,26 @@ ip.src == 0.0.0.0
 
 Show only HTTP packets
 
-http
+    http
 
 Show HTTP GET requests
-http.request.method == "GET"
+
+
+    http.request.method == "GET"
 
 Show HTTP POST requests
-http.request.method == "POST"
+
+    http.request.method == "POST"
 
 Show HTTP requests hitting the 2007 Records system
-http.request.uri contains "path name"
+
+
+    http.request.uri contains "path name"
 
 Show only POST logins to the 2007 login page
-http.request.method == "POST" && http.request.uri contains "log-in"
+
+
+    http.request.method == "POST" && http.request.uri contains "log-in"
 
 Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path
 
