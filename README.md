@@ -1,3 +1,6 @@
+# We recommend downloading Wireshark and John the Ripper for your device as you answer the first questions
+
+
 # 🔑 Challenge 1: Decryption
 
 ---
@@ -68,7 +71,49 @@ The flag has been concealed by setting a height value in the image header that i
     * **Decimal to Hex Converter:** [https://www.binaryhexconverter.com/decimal-to-hex-converter](https://www.binaryhexconverter.com/decimal-to-hex-converter)
 * The flag is in the standard CTF format: `flag{something_hidden_here}`.
 
-#  🔐 Challenge 4 — Password Cracking (John the Ripper + ZIP)
+
+# Challenge 4 - Packet Sniffing for Credentials (Wireshark)
+
+### Capybara Savings Bank uses an old internal system called "Capybara Records 2007." 
+
+    This system is outdated and transmits all login credentials in plain HTTP (no encryption).
+    We captured network traffic while the CEO accessed this insecure system.
+    Your objective is to analyze the .pcap file and extract the CEO’s login credentials and the site path that is revealed alongside them. Go onto the website and sign on with the sniffed credentials to find capture the flag!!!
+
+CEO Source IP Address:
+    10.0.0.42
+
+Target System Directory:
+    /2007-CapyBara-Records/
+
+The login request is mixed into thousands of packets.
+Only one POST request from 10.0.0.42 contains the real credentials.
+
+
+# Filter all packets from CEO system
+ip.src == 0.0.0.0
+
+# Show only HTTP packets
+http
+
+# Show HTTP GET requests
+http.request.method == "GET"
+
+# Show HTTP POST requests
+http.request.method == "POST"
+
+# Show HTTP requests hitting the 2007 Records system
+http.request.uri contains "path name"
+
+# Show only POST logins to the 2007 login page
+http.request.method == "POST" && http.request.uri contains "log-in"
+
+# Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path
+
+
+
+
+#  🔐 Challenge 5 — Password Cracking (John the Ripper + ZIP)
 
 Your goal is to crack the password-protected ZIP file, extract the hidden trivia questions, and use the answers to form the flag.
 
@@ -239,4 +284,7 @@ Answer the two questions located in the file extracted (trivia.txt):
 **Flag Format:**
 
 flag{answer1_answer2}
+
+
+
 
