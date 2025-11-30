@@ -74,41 +74,43 @@ The flag has been concealed by setting a height value in the image header that i
 
 # Challenge 4 - Packet Sniffing for Credentials (Wireshark)
 
-### Capybara Savings Bank uses an old internal system called "Capybara Records 2007." 
+Before you begin this challenge, please download wireshark and the file in the repo called "capybara_bank_logs.pcap". Please open this file in Wireshark.
 
-    This system is outdated and transmits all login credentials in plain HTTP (no encryption).
-    We captured network traffic while the CEO accessed this insecure system.
-    Your objective is to analyze the .pcap file and extract the CEO’s login credentials and the site path that is revealed alongside them. Go onto the website and sign on with the sniffed credentials to find capture the flag!!!
+## Capybara Savings Bank uses an old internal system called "Capybara Records 2007." 
 
-CEO Source IP Address:
-    10.0.0.42
+This system is outdated and transmits all login credentials in plain HTTP (no encryption).
+We captured network traffic while the CEO accessed this insecure system.
+Your objective is to analyze the .pcap file and extract the CEO’s login credentials and the site path that is revealed alongside them. Go onto the website and sign on with the sniffed credentials to find capture the flag!!!
 
-Target System Directory:
+### CEO Source IP Address:
+10.0.0.42
+
+### Target System Directory:
     /2007-CapyBara-Records/
 
-The login request is mixed into thousands of packets.
+### The login request is mixed into thousands of packets.
 Only one POST request from 10.0.0.42 contains the real credentials.
 
 
-# Filter all packets from CEO system
-ip.src == 0.0.0.0
+Filter all packets from CEO system
+    ip.src == 0.0.0.0
 
-# Show only HTTP packets
-http
+Show only HTTP packets
+    http
 
-# Show HTTP GET requests
-http.request.method == "GET"
+Show HTTP GET requests
+    http.request.method == "GET"
 
-# Show HTTP POST requests
-http.request.method == "POST"
+Show HTTP POST requests
+    http.request.method == "POST"
 
-# Show HTTP requests hitting the 2007 Records system
-http.request.uri contains "path name"
+Show HTTP requests hitting the 2007 Records system
+    http.request.uri contains "path name"
 
-# Show only POST logins to the 2007 login page
-http.request.method == "POST" && http.request.uri contains "log-in"
+Show only POST logins to the 2007 login page
+    http.request.method == "POST" && http.request.uri contains "log-in"
 
-# Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path
+Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path
 
 
 
