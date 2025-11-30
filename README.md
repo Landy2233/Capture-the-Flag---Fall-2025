@@ -145,8 +145,8 @@ Open **Terminal**:
 
 **Windows:**
 
-Open **Command Prompt** or **PowerShell**:  
-- Press **Windows Key**, type **cmd** or **powershell**, press **Enter**
+Open **PowerShell**:  
+- Press **Windows Key**, type **powershell**, press **Enter**
 
 ## Install John the Ripper
 
