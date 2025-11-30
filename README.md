@@ -126,10 +126,57 @@ Show only POST logins to the 2007 login page
 
 ### Press on HTML Form URL Encoded: application/x-www-form-urlencoded to reveal the username, password and path ###
 
+# Challenge 5 - Sql Injection
+
+## Problem Description
+
+For this challenge we must inject a sql query into the username and password to access to the Employee bank account.
+
+Given site: https://ctf-mwotmt76e-danny-galvis-projects.vercel.app/
+
+### Hints !
+
+In SQL, anything after -- is treated as a comment.
+The database ignores everything after the double dash.
+
+Example:
+SELECT * FROM users -- this part is ignored
+------------------------------------------------------------
+
+HINT 1:
+Focus on the username field. If you inject SQL into the username,
+you can bypass the password check completely.
+
+Remember:
+"admin" is commonly an existing username.
+
+------------------------------------------------------------
+
+HINT 2:
+To perform SQL injection, the attacker must:
+1. Break out of the string using a single quote '
+2. Add their own logic: OR '1'='1'
+3. Comment out the rest using --
+
+This deletes the password verification.
+
+------------------------------------------------------------
+
+HINT 3:
+If the attacker enters this as the username:
+' OR '1'='1' --
+
+The final SQL query becomes:
+
+SELECT * FROM users
+WHERE username = '' OR '1'='1' --'
+  AND password = 'whatever';
+
+Everything after -- is ignored, so the password check never runs.
 
 
 
-#  🔐 Challenge 5 — Password Cracking (John the Ripper + ZIP)
+#  🔐 Challenge 6 — Password Cracking (John the Ripper + ZIP)
 
 Your goal is to crack the password-protected ZIP file, extract the hidden trivia questions, and use the answers to form the flag.
 
